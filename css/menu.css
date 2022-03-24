@@ -1,0 +1,256 @@
+
+/*CSS PARA EL ENCABEZADO*/
+/*menu principal */
+header nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF0ED;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-width: 1280px;
+}
+/*texto nitro en el logo*/
+nav h2{
+    margin-top: 0%;
+    margin-right: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 50;
+}
+
+/* quitar viñetas a items del menu*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*background: #FFF0ED;*/
+}
+/*color letra del menu*/  
+nav li a {
+    color: #393939;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+/*efecto cuando se desplaza el mouse*/
+  nav li a:hover {
+    background: #5BACC3;
+    color: white;
+  }
+
+/*espaciado y justificado de las opciones del menu*/  
+@media screen and (min-width: 800px) {
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  }
+}
+/* ubicación logo cafe y texto nitro*/
+.logoynitro{
+    background-color: #FFF0ED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*tamaño de imágen*/
+.menu img{
+    min-width: 100%;
+    max-width:100% ;
+    /*min-height: 575px;
+    max-height: 575px;*/
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+}
+
+/*CSS SECCION MENU*/
+/*divisón del cuadro negro*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    max-width:100% ;
+    width: 100%;
+    max-width: 1280px;
+    background-color: aqua;
+    background-size: cover;
+    align-content: center;
+}
+.titulomenu{
+    width: 280px;
+    height: 180px;
+    background-color:#393939;
+    color:white
+}
+/*titulo MENU*/
+.titulomenu h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 0%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*CSS SECCION HEADER2*/
+
+/*Modulo Nitro Coffe contendor header 2*/
+.container{
+    display: flex;
+    background-color: #FFF0ED;
+    width: 100%;
+    max-width: 1280px;
+}
+/*modulo lado izquierdo Nitro Cofee*/
+.containerizq{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+}
+
+/*Tipo de letra titulo Nitro Cofee*/
+.containerizq h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+/*parrafo seccion 2*/
+.containerizq p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 20;
+    width: 400px;
+}
+/*botones*/
+.containerizq button{
+    background-color: #5BACC3;
+    color:white;
+    border: 0ch;
+    font-size: 20px;
+}
+/*Modulo 2 lado derecho*/
+.containerder{
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    width: 700px;
+    height: 500px;
+}
+.containerder img{
+    justify-content: flex-start;
+    width: 250px;
+    height: 420px;
+    margin-top: 15px;
+}
+
+/*CSS SECCION OUR DE ARTICULOS*/
+/*Modulo principal de los 3 articulos*/
+
+.our{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(241, 237, 237);
+    height: 700px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1280px;
+}
+/*boton View All*/
+.our button{
+    background-color: #5BACC3;
+    color:white;
+    border: 0ch;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*UBICACION Y ALINEACION DEL CONTENEDOR DE LAS TARJETAS*/
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*formato del titulo nuestros productos  OUR PRODUCTS*/
+.our h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/*Elementos del modulo articulos*/
+.card{
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 440px;
+    max-height: 460px;
+    padding: 10px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px;
+    box-shadow: rgba(0, 0, 0, 0.25) ;
+    background-color: white;
+}
+
+/* Centrado de las imagenes de las tarjetas*/
+.card img{
+    align-content: center;
+}
+
+
+
+/* Sección Descuentos*/
+.dcto{
+    background-color: #393939;
+    font-family: 'Open Sans', sans-serif;
+    font-size:45px;
+    font-weight: 300px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 1280px;
+}
+
+/*CSS PARA EL PIE DE PAGINA*/
+footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: space-around;
+    background-color: #FFF0ED;
+}
+footer h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 30;
+}
+
+footer p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 30;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
