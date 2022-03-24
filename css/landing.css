@@ -130,9 +130,9 @@ nav ul {
     justify-content: center;
 }
 
-
 /*UBICACION Y ALINEACION DEL CONTENEDOR DE LAS TARJETAS*/
 .tarjetas{
+    /*position: absolute;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -149,6 +149,8 @@ nav ul {
 
 /*Elementos del modulo articulos*/
 .card{
+    /*position: relative;*/
+   
     min-width: 300px;
     max-width: 350px;
     min-height: 440px;
@@ -159,11 +161,13 @@ nav ul {
     box-shadow: 0 5px 9px -1px;
     box-shadow: rgba(0, 0, 0, 0.25) ;
     background-color: white;
+   /* justify-content: center;*/
 }
 
 /* Centrado de las imagenes de las tarjetas*/
 .card img{
     align-content: center;
+    margin: auto;
 }
 
 
