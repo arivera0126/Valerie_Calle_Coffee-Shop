@@ -1,5 +1,5 @@
 
-/*CSS PARA EL ENCABEZADO*/
+/*SS PARA EL ENCABEZADO*/
 /*menu principal */
 header nav{
     height: 60px;
@@ -58,8 +58,6 @@ nav ul {
 
 /*tamaño de imágen*/
 .menu img{
-    min-width: 100%;
-    max-width:100% ;
     min-height: 575px;
     max-height: 675px;
     background-position: center;
@@ -68,6 +66,7 @@ nav ul {
 }
 
 /*CSS SECCION MENU*/
+
 /*divisón del cuadro negro*/
 
 main{
@@ -80,25 +79,28 @@ main{
     align-content: center;
 }
 .menu{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1280px;
+    display: grid;
+    place-items: center;
+    min-height: 575px;
+    max-height: 675px;
+    background-image: url("../assets/images/coffee-circle.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .titulomenu{
     width: 280px;
     height: 180px;
     background-color:#393939;
-    color:white
-    
+    align-self: center;
 }
 /*titulo MENU*/
 .titulomenu h1{
     font-family: 'Open Sans', sans-serif;
     font-size: 60px;
     font-weight: 100;
-    margin-top: 0%;
-    text-align: center;
+    color:white;
+    display: grid;
+    place-items: center;
 }
 
 /* SEGUNDA BARRA DE NAVEGACION MENU*/
@@ -139,7 +141,6 @@ main{
 /*seccion hot*/
 .hotdrinks {
     background-color: #FFF0ED;
-    
 }
 /*seccion cold*/
 .colddrinks {
@@ -231,4 +232,3 @@ main{
 .valor{
     color: #5BACC3;
 }
-
